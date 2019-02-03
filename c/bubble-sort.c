@@ -4,14 +4,15 @@ void bubbleSort(int *arr, int arrSize);
 
 int main(void)
 {
-    int arr[6];
     int arrSize = 0;
+    printf("Number of elements: ");
+    scanf("%i", &arrSize);
+    int arr[arrSize];
     
-    for (int i = 0; i < 6; i++)
+    for (int i = 0; i < arrSize; i++)
     {
         printf("Enter number %i: ", i + 1);
         scanf("%i", &arr[i]);
-        arrSize++;
     }
 
     printf("Unsorted array: ");
